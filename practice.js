@@ -319,15 +319,11 @@ console.log(devMountainEmployees.length);
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
 
-function byeBye(array, property, value){
-  for(var i = 0; i < array.length; i++){
-    if(array[i][property] === value){
-      array.splice(i,1)
-    }
-  } return array
+for (var i = 0; i < devMountainEmployees.length; i++)
+    if(devMountainEmployees[i].name === 'Cahlan'){
+        devMountainEmployees.splice(i,1);
 }
 
-byeBye(devMountainEmployees, 'name', 'cahlan')
 
 
 ////////// PROBLEM 13 //////////
@@ -369,16 +365,10 @@ users.push(user1, user2, user3);
   Once you find the particular index he's located in, delete him from the array.
 */
 
-function remover(array, property, value){
-    for(var i = 0; i < array.length; i++){
-    if(array[i][property] === value){
-      array.splice(i,1)
-    }
-  }
-  return array
+for (var i = 0; i < users.length; i++)
+    if(users[i].email === 'tylermcginnis33@gmail.com'){
+        users.splice(i,1);
 }
-remover(users)
-
 
 /*
   The activity we just did is very much how data works in 'the real world'.
